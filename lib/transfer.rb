@@ -34,7 +34,7 @@ class Transfer
      sender.deposit(@amount)
      @status = "reversed" 
     else 
-      @status = rejected
+      @status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
  end
