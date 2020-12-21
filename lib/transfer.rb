@@ -22,7 +22,7 @@ class Transfer
      @status = "rejected"
      "Transaction Rejected."
    else
-     @sender.deposit
+     @sender.deposit(@amount * + 1)
    end
    
    
