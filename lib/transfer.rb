@@ -30,7 +30,9 @@ class Transfer
  
  def reverse_transfer
    if valid? && receiver.balance > @amount && @status == "complete"
-     
+     reciever.withdrawl(@amount)
+     sender.depsit(@amount)
+     @status ="reversed"
  end
  
 end
