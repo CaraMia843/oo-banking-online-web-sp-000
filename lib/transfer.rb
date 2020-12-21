@@ -22,9 +22,9 @@ class Transfer
      @status = "rejected"
      "Transaction Rejected."
    elsif
-   else
     @status == "complete"
      "No more than one transaction available."
+    else
      @sender.deposit(@amount * -1)
      @receiver.deposit(@amount)
      @status = "complete"
