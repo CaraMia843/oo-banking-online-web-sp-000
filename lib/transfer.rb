@@ -32,7 +32,11 @@ class Transfer
    if valid? && receiver.balance > @amount && @status == "complete"
      reciever.withdrawl(@amount)
      sender.depsit(@amount)
-     @status ="reversed"
+     @status = "reversed" 
+    else 
+      @status = rejected
+      "Transaction rejected. Please check your account balance."
+    end
  end
  
 end
