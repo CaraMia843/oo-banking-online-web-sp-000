@@ -19,7 +19,7 @@ class BankAccount
  
  def valid?
    if @staus == "open" && @balance > 0 
-     true
+     return true
   end
  end
 end
