@@ -23,6 +23,7 @@ class Transfer
      "Transaction Rejected."
    else
      @sender.deposit(@amount * + 1)
+     @receiver.deposit(@amount)
    end
    
    
