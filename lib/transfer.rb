@@ -23,7 +23,7 @@ class Transfer
       return "Transaction rejected. Please check your account balance."   
    elsif
     @status == "complete"
-     "No more than one transaction available."
+     puts "No more than one transaction available."
     else
      @sender.deposit(@amount * -1)
      @receiver.deposit(@amount)
