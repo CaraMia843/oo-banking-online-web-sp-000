@@ -21,7 +21,8 @@ class Transfer
    if @sender.balance < @amount
      @status = "rejected"
      "Transaction Rejected."
-   elsif 
+   else
+     @sender.deposit
    end
    
    
