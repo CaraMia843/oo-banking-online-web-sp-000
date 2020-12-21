@@ -21,10 +21,13 @@ class Transfer
    if @sender.balance < @amount
      @status = "rejected"
      "Transaction Rejected."
-   else
+   elsif
      @sender.deposit(@amount * -1)
      @receiver.deposit(@amount)
      @status = "complete"
+  else
+    @status = "complete"
+     "No more than one transaction available."
    end
    
    
