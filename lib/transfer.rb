@@ -22,7 +22,7 @@ class Transfer
      @status = "rejected"
      "Transaction Rejected."
    else 
-     
+     @sender.balance > @amount
    
    
  end
