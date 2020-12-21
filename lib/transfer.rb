@@ -26,7 +26,7 @@ class Transfer
      @receiver.deposit(@amount)
      @status = "complete"
   else
-    @status = "complete"
+    @status == "complete"
      "No more than one transaction available."
    end
    
